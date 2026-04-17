@@ -1,26 +1,75 @@
-# dev-agents-team
+# 🧭 dev-agents-team
 
-Multi-agent development team — 9 roles covering the full pipeline for coding, Skill development, and project building, with three task modes: lightweight, standard, and full.
+### Multi-Agent Development Team
+
+> **9 roles × 3 task modes = full pipeline for coding, Skill development, and project building**
 
 ---
 
-## Roles
+## Elevator Pitch
+
+> Give any AI tool a complete development team — from requirements analysis to code review, architecture design to deployment, fully coordinated without manual oversight.
+
+---
+
+## Contents
+
+- [Features](#-features)
+- [Roles](#-roles)
+- [Task Modes](#-task-modes)
+- [Workflow](#-workflow)
+- [Installation](#-installation)
+- [Quick Start](#-quick-start)
+- [Deliverables](#-deliverables)
+- [Versioning](#-versioning)
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| 9 Roles | 司南 / 罗盘 / 青图 / 织网 / 铸铁 / 刻石 / 白泽 / 青龙 / 御史 |
+| 3 Task Modes | 🟢 Lightweight · 🟡 Standard · 🔴 Full |
+| Independent Skill Engineering | 刻石 owns SKILL.md, decoupled from backend |
+| Full-process Quality Gates | 白泽 review + 司南 final + 御史 oversight |
+| Universal Installation | Works with any AI platform supporting Skills directories |
+
+---
+
+## 🏗️ Architecture
+
+```
+dev-agents-team/
+└── agents/
+    ├── dev-team-ceo/          # 司南 - Tech Lead
+    ├── dev-team-requirements/ # 罗盘 - Requirements
+    ├── dev-team-architect/   # 青图 - Architecture
+    ├── dev-team-frontend/     # 织网 - Frontend
+    ├── dev-team-backend/      # 铸铁 - Backend
+    ├── dev-team-skill/        # 刻石 - Skill Engineering
+    ├── dev-team-reviewer/     # 白泽 - Code Review
+    ├── dev-team-devops/       # 青龙 - DevOps
+    └── dev-team-monitor/     # 御史 - Oversight
+```
+
+### Role Overview
 
 | Layer | Agent | Role | Modes |
-|-------|-------|------|-------|
-| Dispatch | **司南** (CEO) | Tech lead, task routing, quality gate | All |
-| Design | **罗盘** (Requirements) | Requirements analysis, specs | Standard / Full |
-| Design | **青图** (Architect) | Architecture design, tech stack | Standard / Full |
-| Build | **织网** (Frontend) | UI, web, mini-programs | Standard / Full |
-| Build | **铸铁** (Backend) | API, scripts, backend logic | Standard / Full |
-| Build | **刻石** (Skill) | SKILL.md design & iteration | Standard / Full |
-| Quality | **白泽** (Reviewer) | Code/review, right to reject | Light / Standard / Full |
-| Delivery | **青龙** (DevOps) | Environment, deployment, delivery | Light / Standard / Full |
-| Watch | **御史** (Monitor) | Full-process oversight, reports to 司南 | Full only |
+|:-----:|-------|------|:-----:|
+| Dispatch | **司南** | Tech lead, task routing, quality gate | All |
+| Design | **罗盘** | Requirements analysis, specs | Standard / Full |
+| Design | **青图** | Architecture design, tech stack | Standard / Full |
+| Build | **织网** | UI, web, mini-programs | Standard / Full |
+| Build | **铸铁** | API, scripts, backend logic | Standard / Full |
+| Build | **刻石** | SKILL.md design & iteration | Standard / Full |
+| Quality | **白泽** | Code review, right to reject | All |
+| Delivery | **青龙** | Environment, deployment, delivery | All |
+| Watch | **御史** | Full-process oversight, reports to 司南 | Full only |
 
 ---
 
-## Task Modes
+## 🎯 Task Modes
 
 ### 🟢 Lightweight (3 agents)
 
@@ -40,11 +89,11 @@ Feature module, full Skill build, small project.
 
 ### 🔴 Full (9 agents)
 
-Complete project, multi-module, strict quality control.御史全程开启。
+Complete project, multi-module, strict quality control. 御史 monitors throughout.
 
 ---
 
-## Workflow
+## ⚙️ Workflow
 
 ```
 1.  用户 → 司南: submit request
@@ -53,8 +102,8 @@ Complete project, multi-module, strict quality control.御史全程开启。
 4.  青图: architecture → tech plan → 司南
 5.  司南: approve plan, assign tasks to 织网/铸铁/刻石
 6.  Engineers: build → 白泽 for review
-7.  白泽: review → reject (Engineer revises) / pass (司南 final review)
-8.  司南 final review → 青龙
+7.  白泽: review → reject (Engineer revises) / pass (司南 final)
+8.  司南 final → 青龙
 9.  青龙: environment/deployment check → 司南
 10. 司南 → 用户: delivery report, request confirmation
 11. 用户 confirms → 青龙 publishes
@@ -62,47 +111,33 @@ Complete project, multi-module, strict quality control.御史全程开启。
 ```
 
 **Automatic handoffs (司南 not involved):**
+
 - 罗盘 ↔ 用户 (clarifying requirements)
 - Engineer ↔ 白泽 (revision loop)
 
 ---
 
-## Installation
+## 📥 Installation
 
 Each agent is a `SKILL.md` file in its own directory.
 
-Copy the `agents/` folder into your agent platform's skills directory:
+Copy the `agents/` folder into your AI platform's Skills directory:
 
 ```
 # User-level (all projects)
-~/.workbuddy/skills/
+~/.skills/
 
 # Project-level
-<your-project>/.workbuddy/skills/
-```
-
-Directory layout:
-
-```
-agents/
-├── dev-team-ceo/          # 司南
-├── dev-team-requirements/ # 罗盘
-├── dev-team-architect/    # 青图
-├── dev-team-frontend/     # 织网
-├── dev-team-backend/      # 铸铁
-├── dev-team-skill/        # 刻石
-├── dev-team-reviewer/     # 白泽
-├── dev-team-devops/       # 青龙
-└── dev-team-monitor/     # 御史
+<your-project>/.skills/
 ```
 
 Activate by selecting `司南` from the skills panel.
 
 ---
 
-## Quick Start
+## 🚀 Quick Start
 
-1. Open your agent platform
+1. Copy `agents/` to your AI platform's Skills directory
 2. Select `司南-技术总监` from skills/experts
 3. Submit your development request
 
@@ -110,7 +145,7 @@ Activate by selecting `司南` from the skills panel.
 
 ---
 
-## Deliverables
+## 📦 Deliverables
 
 | Deliverable | From | Review | Goes to |
 |-------------|------|--------|---------|
@@ -120,3 +155,22 @@ Activate by selecting `司南` from the skills panel.
 | Backend code | 铸铁 | 白泽 | 司南 |
 | SKILL.md | 刻石 | 白泽 | 司南 → 青龙 |
 | Deployment ready | 青龙 | 司南 | 用户 confirms → publish |
+
+---
+
+## 📄 Versioning
+
+| Version | Date | Changes |
+|---------|------|---------|
+| v1.0.0 | 2026-04-17 | Initial release |
+
+---
+
+## 📜 License
+
+- License: MIT License
+- Open to contributions, Fork welcome
+
+---
+
+*This project is a clean template package and contains no personal data.*
